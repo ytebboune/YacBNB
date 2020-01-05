@@ -1,5 +1,5 @@
 <?php
-namespace App\Service;
+namespace App\Services;
 use Twig\Environment;
 use Symfony\Component\HttpFoundation\Request;
 use Doctrine\Common\Persistence\ObjectManager;
@@ -229,6 +229,6 @@ class PaginationService {
      * @return string
      */
     public function getRoute(): string {
-        return $route;
+        return $this->route;
     }
 }
